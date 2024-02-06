@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="general.css">
+    <script src="js/checkout.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <div class="nav-container">
+      <div class="nav-bar">
+        <ul>
+          <li id="logo">
+            <a href="index.html">
+              <img src="artstopimg/artstop.png" alt="logo" id="logo-img">
+            </a>
+          </li>
+          <li id="set-li">
+            <ul id="mid-li">
+              <li id="faq">
+                <a class="nav-a" href="faq.html">FAQ</a>
+              </li>
+              <li id="test">
+                <a href="./index.html#testimonials" class="nav-a"> Testimonials </a>
+              </li>
+              <li id="con">
+                <a href="checkout.html#contact" class="nav-a">Contact</a>
+              </li>
+              <li id="about"><a class="nav-a" href="about.html">About</a></li>
+              <li id="shopnow-btn">
+                <a class="nav-a" href="/assets/html/shop">
+                  Shop Now<i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li id="hb">
+            <a href="#">
+              <img src="icons/check-circle-solid.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="side-cart">
+          <div id="cart-close-btn">
+            <button>
+              <img src="icons/exit-btn.png" alt="" id="cart-close">
+            </button>
+          </div>
+          <span id="cart-head">my cart</span>
+        </div>
+      </div>
+    </div>
+    <div id="checkout-page">
+      <div class="title-page">
+        <h1>checkout section</h1>
+        <div class="checkout-page-container">
+          <div class="checkout-container">
+            <div class="subtotal-box">
+              <div class="checkout-subtotal">Subtotal: ₱0.00</div>
+            </div>
+            <div class="checkout-details-div">
+              <div class="checkout-title">1. Shipping Details</div>
+              <div>
+                <input class="input-box first-name" type="text" placeholder="First Name">
+              </div>
+              <div>
+                <input class="input-box last-name" type="text" placeholder="Last Name">
+              </div>
+              <div>
+                <input class="input-box" type="text" placeholder="Address">
+              </div>
+              <div>
+                <input class="input-box" type="text" placeholder="City">
+              </div>
+              <div>
+                <input class="input-box" type="text" placeholder="Country">
+              </div>
+              <div class="pz-main-container">
+                <div>
+                  <input class="input-box input-box-size" type="text" placeholder="Phone">
+                </div>
+                <div>
+                  <input class="input-box input-box-size" type="text" placeholder="Zip/Postal Code">
+                </div>
+              </div>
+            </div>
+            <div class="checkout-details-div">
+              <div class="checkout-title">2. delivery method</div>
+              <form class="method-form">
+                <div class="inp-radio">
+                  <input type="radio" name="method" class="method-btn" id="method-1">
+                  <label for="method-1">cash on delivery </label>
+                </div>
+                <div class="inp-radio">
+                  <input type="radio" name="method" class="method-btn" id="method-2">
+                  <label for="method-2">e-mail </label>
+                </div>
+                <div class="input-box-em em-none">
+                  <input class="input-box" type="text" placeholder="E-mail Address">
+                </div>
+              </form>
+            </div>
+            <div class="checkout-details-div payment-container em-none">
+              <div class="checkout-title payment">3. payment</div>
+              <form class="payment-form">
+                <div class="inp-radio">
+                  <input type="radio" name="payment" class="payment-btn" id="payment-1">
+                  <label for="payment-1">credit card</label>
+                </div>
+                <div class="cc-inps-container em-none">
+                  <p class="cc-title">card details</p>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Card Name">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Card Number">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Expiration Date (MM-DD-YYYY)">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Security Code">
+                  </div>
+                  <p class="cc-title">billing information</p>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Billing Address">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="Country">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="State/Province">
+                  </div>
+                  <div>
+                    <input class="input-box" type="text" placeholder="City">
+                  </div>
+                  <div>
+                    <input class="input-box input-box-size" type="text" placeholder="Zip/Postal Code">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button class="continue-btn">place order</button>
+          </div>
+          <div class="products-container">
+            <div class="product-container-header">Your cart item(s):</div>
+            <div class="products-container-storage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container em-none">
+      <div class="modal">
+        <div class="check-logo">
+          <img src="../img/icons/check-circle-solid.png" alt="" class="check-logo-img">
+        </div>
+        <button class="modal-close">
+          <img src="../img/icons/x-regular.png" alt="">
+        </button>
+        <div class="modal-container-para">
+          <div class="ty-para">
+            <h1>Thank you for purchasing our items!</h1>
+            <div class="ty-info">
+              Please kindly check your receipt number, this will be your proof
+              for this transaction.
+            </div>
+            <div class="ty-info modal-bold receipt-no"></div>
+            <div class="ty-info modal-bold full-name"></div>
+            <div class="ty-info modal-bold date-time"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-page" id="contact">
+        <h1 id="f-name">ART STOP</h1>
+        <ul id="footer-li">
+          <li id="f-faq">
+            <a class="footer-a" href="faq.html" title="">FAQ</a>
+          </li>
+          <li id="f-test">
+            <a class="footer-a" href="index.html#testimonials">
+              Testimonials
+            </a>
+          </li>
+          <li id="f-con">
+            <a href="checkout.html#contact" class="footer-a">Contact</a>
+          </li>
+          <li id="about">
+            <a class="footer-a" href="about.html">About</a>
+          </li>
+          <li id="f-shopnow-btn">
+            <a class="footer-a" href="shop.html">
+              Shop Now<i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </li>
+        </ul>
+        <hr>
+
+        <div id="f-container-all">
+          <div class="f-socials-container">
+            <div id="socials">
+              <h4>Follow Us</h4>
+            </div>
+            <div id="f-socials-logo">
+              <a href="https://www.facebook.com/">
+                <img src="icons/fb-logo.png" alt="fb-logo">
+              </a>
+              <a href="https://twitter.com/">
+                <img src="icons/twitter-logo.png" alt="twitter-logo">
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="icons/ig-logo.png" alt="ig-logo">
+              </a>
+            </div>
+            <div id="f-copy">© 2024 bodota, pastor, marquez, remolacio, balonzo</div>
+          </div>
+          <div class="f-newsletter-container">
+            <div id="newsletter">
+              <h4>Newsletter</h4>
+            </div>
+            <div id="f-newsletter-info">
+              to get updates on our shop and some surprises
+            </div>
+            <div class="email-display"></div>
+            <div id="subscribe-txtbtn">
+              <input type="email" id="newsletter-txt" placeholder="email address">
+              <input type="button" value="subscribe" id="newsletter-btn">
+            </div>
+          </div>
+          <div class="f-contact-container">
+            <div id="contact-us">
+              <h4>contact us</h4>
+            </div>
+            <div id="f-contact-info">
+              <div>mobile no: 09636531033</div>
+              <div>telephone no: 122-7642</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>

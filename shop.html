@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="general.css">
+    <script src="js/shop.js"></script>
+    <script src="js/footer.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <body>
+        <div class="nav-container">
+          <div class="nav-bar">
+            <ul>
+              <li id="logo">
+                <a href="index.html">
+                  <img src="artstopimg/artstop.png" alt="logo" id="logo-img">
+                </a>
+              </li>
+              <li id="set-li">
+                <ul id="mid-li">
+                  <li id="faq">
+                    <a class="nav-a" href="faq.html">FAQ</a>
+                  </li>
+                  <li id="test">
+                    <a href="index.html#testimonials" class="nav-a"> Testimonials </a>
+                  </li>
+                  <li id="con">
+                    <a href="shop.html#contact" class="nav-a">Contact</a>
+                  </li>
+                  <li id="about"><a class="nav-a" href="about.html">About</a></li>
+                  <li id="shopnow-btn">
+                    <a class="nav-a" href="shop.html">
+                      Shop Now<i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="cart">
+                <a href="#">
+                  <img src="artstopimg/cart-logo.png" alt="">
+                </a>
+              </li>
+            </ul>
+            <div class="side-cart">
+              <div id="cart-close-btn">
+                <button>
+                  <img src="icons/exit-btn.png" alt="" id="cart-close">
+                </button>
+              </div>
+              <span id="cart-head">my cart</span>
+              <div class="cart-items-container"></div>
+              <div class="cart-item-checkout-container">
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div>
+                  <button class="checkout-btn">Check Out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop-page">
+          <div class="title-page">
+            <h1>shop</h1>
+          </div>
+          
+          <div class="shop-container">
+            <!-- start -->
+            <div class="item-container" id="colorful-dog">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/Colorful Dog.png" alt="colorful-dog" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Colorful Dog</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Dark Colors</div>
+                    <div class="art-title-info-min">Type of Art: Impressionism</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                        The painting is likely to appeal to dog lovers and people who appreciate impressionistic art. 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-1" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-1" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;39.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-2" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-2" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;69.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-3" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-3" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;99.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-4" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-4" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;129.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height </div>
+                    </label>
+                  </div>
+                  
+                  <div class="pricing-total">
+                    <div class="license-type">Extra Large</div>
+                    <div class="total-price">Price: &#8369;129.99</div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="innocent-child">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/Innocent Child.png" alt="innocent-child" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Innocent Child</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Monochrome</div>
+                    <div class="art-title-info-min">Type of Art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas, Pencils and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                      This is an artwork of a young child's face.
+                     
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-5" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-5" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;29.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-6" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-6" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;59.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-7" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-7" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                      Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;89.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-8" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-8" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;119.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type">Small</div>
+                    <div class="total-price">Price: &#8369;29.99</div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="item-container" id="angry-dog">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/angrydog.jpg" alt="angry-dog" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Angry Dog</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Dark Colors</div>
+                    <div class="art-title-info-min">Type of Art: </div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                      angry dog, which, in a way demonstrates his weird and unconscious degree of attachment to animal
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-9" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-9" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;79.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-10" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-10" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;129.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-11" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-11" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;169.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-12" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-12" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;209.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="beautiful-bouquet">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/beautiful-bouquet.jpg" alt="beautiful-bouquet" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Beautiful Bouquet</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Monochrome</div>
+                    <div class="art-title-info-min">Type of Art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p ">
+                     A beautiful bouquet of flowers in full bloom can signify life, faith, growth, and power.
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-13" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-13" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;29.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-14" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-14" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;59.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-15" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-15" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;89.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-16" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-16" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;119.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="city-lights">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/city-lights.jpg" alt="city-lights" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">City Lights</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Bright Colors</div>
+                    <div class="art-title-info-min">Type of Art: Geometric Art</div>
+                    <div class="art-title-info-min">Materials Used: Canvas, Acrylic Paint and Measurement Tools</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p ">
+                        City lights is a painting of a colorful and highly stylized painting featuring an urban landscape. 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-17" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-17" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;109.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-18" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-18" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;149.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-19" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-19" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;189.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-20" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-20" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;229.99</div>
+                      <div class="f-pricing-form">Dimensions:30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="headscarf">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/headscarf.jpg" alt="headscarf" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Headscarf</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Dark Colors</div>
+                    <div class="art-title-info-min">Type of Art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                      painting of a person, likely a woman with a headscarf or veil.
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-21" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-21" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;9.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-22" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-22" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;29.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-23" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-23" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;49.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-24" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-24" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;69.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="lake-of-fortune">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/Lake of Fortune.png" alt="lake-of-fortune" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Lake Fortune</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Monochrome</div>
+                    <div class="art-title-info-min">Type of Art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                        The painting is of a snow-capped mountain range in the foreground, 
+                        with a winding river in front of it. 
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-25" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-25" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Smal
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;129.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-26" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-26" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;189.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-27" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-27" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;219.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-28" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-28" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;239.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height </div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-container" id="mirror">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/mirror.jpg" alt="mirror" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Mirrors</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Monochrome</div>
+                    <div class="art-title-info-min">Type of art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p ">
+                        Mirrors have been included in a variety of paintings throughout history. 
+                        They can represent either truth and self-assurance.
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-29" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-29" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;39.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-30" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-30" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;59.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-31" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-31" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;79.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-32" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-32" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;129.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 incehs height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-container" id="oceanic">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/oceanic.jpg" alt="oceanic" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Oceanic</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors used: Dark Colors</div>
+                    <div class="art-title-info-min">Type of Art: Abstract</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                        Oceanic is an expressive painting of an ocean wave.
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-33" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-33" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;39.99</div>
+                      <div class="f-pricing-form">Dimension: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-34" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-34" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;29.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-35" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-35" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;49.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-36" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-36" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;69.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item-container" id="fruits">
+              <div class="art-info">
+                <div class="art-art">
+                  <img src="products/pruts.jpg" alt="fruits" class="art-img">
+                </div>
+                <div class="art-title-container">
+                  <div class="audio-title">Life with Fruits</div>
+                  <div class="art-title-info">
+                    <div class="art-title-info-min">Colors Used: Light Colors</div>
+                    <div class="art-title-info-min">Type of Art: Expressionism</div>
+                    <div class="art-title-info-min">Materials Used: Canvas and Acrylic Paint</div>
+                  </div>
+                  <div class="show-more-info">
+                    <p class="show-more-info-p">
+                      more info
+                    </p>
+                    <div class="show-info-p">
+                        Fruits are some of the most ubiquitous subjects in still-life paintings over the centuries
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-container">
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-37" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-37" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                        Small
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;39.99</div>
+                      <div class="f-pricing-form">Dimensions: 8 inches width and 10 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-38" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-38" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Medium
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;79.99</div>
+                      <div class="f-pricing-form">Dimensions: 16 inches width and 20 inches height</div>
+                    </label>
+                  </div>
+                  <div class="f-pricing-container">
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-39" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-39" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                    Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;119.99</div>
+                      <div class="f-pricing-form">Dimensions: 24 inches width and 36 inches height</div>
+                    </label>
+                    <input type="radio" name="f-pricing-cards" id="f-pricing-cards-40" class="f-pricing-cards-btn">
+                    <label for="f-pricing-cards-40" class="f-pricing-cards">
+                      <div class="f-pricing-type f-pricing-type-lic">
+                       Extra Large
+                      </div>
+                      <div class="f-pricing-type f-pricing-price">&#8369;159.99</div>
+                      <div class="f-pricing-form">Dimensions: 30 inches width and 40 inches height</div>
+                    </label>
+                  </div>
+                  <div class="pricing-total">
+                    <div class="license-type"></div>
+                    <div class="total-price"></div>
+                    <button class="add-to-cart-btn">
+                      <i class="bx bx-cart-add"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+        <div>
+          <div class="contact-page" id="contact">
+            <h1 id="f-name">Art Stop</h1>
+            <ul id="footer-li">
+              <li id="f-faq">
+                <a class="footer-a" href="faq.html" title="">FAQ</a>
+              </li>
+              <li id="f-test">
+                <a href="./index.html#testimonials" class="footer-a"> Testimonials </a>
+              </li>
+              <li id="f-con">
+                <a href="./shop.html#contact" class="footer-a">Contact</a>
+              </li>
+              <li id="about"><a class="footer-a" href="about.html">About</a></li>
+              <li id="f-shopnow-btn">
+                <a class="footer-a" href="shop.html">
+                  Shop Now<i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div id="f-container-all">
+              <div class="f-socials-container">
+                <div id="socials">
+                  <h4>Follow Us</h4>
+                </div>
+                <div id="f-socials-logo">
+                  <a href="https://www.facebook.com/">
+                    <img src="icons/fb-logo.png" alt="fb-logo">
+                  </a>
+                  <a href="https://twitter.com/">
+                    <img src="icons/twitter-logo.png" alt="twitter-logo">
+                  </a>
+                  <a href="https://www.instagram.com/">
+                    <img src="icons/ig-logo.png" alt="ig-logo">
+                  </a>
+                </div>
+                <div id="f-copy">© 2024 bodota, pastor, marquez,remolacio, balonzo</div>
+              </div>
+              <div class="f-newsletter-container">
+                <div id="newsletter">
+                  <h4>Newsletter</h4>
+                </div>
+                <div id="f-newsletter-info">
+                  to get updates on our shop and some surprises
+                </div>
+                <div class="email-display"></div>
+                <div id="subscribe-txtbtn">
+                  <input type="text" id="newsletter-txt" placeholder="email address">
+                  <input type="button" value="subscribe" id="newsletter-btn">
+                </div>
+              </div>
+              <div class="f-contact-container">
+                <div id="contact-us">
+                  <h4>contact us</h4>
+                </div>
+                <div id="f-contact-info">
+                  <div>mobile no: 09281235681</div>
+                  <div>telephone no: 221-1235</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+   
+    </body>
+
+</html>
